@@ -4,7 +4,7 @@ const todosSlice = createSlice({
   name: "todos",
   initialState: [],
   reducers: {
-    loadTodos: (todos, action) => [...action.payload],
+    loadTodos: (_todos, action) => [...action.payload],
     addTodo: (todos, action) => [...todos, action.payload],
     updateTodo: (todos, action) =>
       (todos.action = () => todos.id === action.id),
