@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const todoSlice = createSlice({
+const todosSlice = createSlice({
   name: "todos",
   initialState: [],
   reducers: {
@@ -8,11 +8,11 @@ const todoSlice = createSlice({
     addTodo: (todos, action) => [...todos, action.payload],
     updateTodo: (todos, action) =>
       (todos.action = () => todos.id === action.id),
-    removePRoject: (todos, action) =>
+    removeTodo: (todos, action) =>
       (todos.action = () => todos.filter((todo) => todo.id !== action.payload)),
   },
 });
 
-export const { loadProjects: loadProjectsActionCreator } = todoSlice.actions;
+export const { loadTodos: loadTodosActionCreator } = todosSlice.actions;
 
-export default todoSlice.reducer;
+export default todosSlice.reducer;
