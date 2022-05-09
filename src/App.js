@@ -1,9 +1,10 @@
 import "./App.css";
-import Todo from "./componentes/Todo/Todo";
+
+import Todos from "./componentes/Todos/Todos";
 
 function App() {
-  return <p>ToDos</p>;
-  <Todo />;
+  debugger;
+  return <Todos />;
 }
-
+// id: 1, name: "Cita", done: false
 export default App;
