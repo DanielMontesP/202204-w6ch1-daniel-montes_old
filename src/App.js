@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Todos from "./componentes/Todos/Todos";
-import initialTodos from "./data/todosDatabase";
+import initialTodos from "./data/initialTodos";
 import { loadTodosActionCreator } from "./redux/features/todos/todosSlice";
 import TodoCSS from "../src/componentes/Todo/TodoCSS";
 
