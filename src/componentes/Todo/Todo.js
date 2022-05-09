@@ -3,7 +3,7 @@ import TodoCSS from "./TodoCSS";
 const Todo = ({ todo: { id, name, done } }) => {
   const deleteTodo = () => {};
   const editTodo = () => {
-    navigator(`/projects/edit/2`);
+    navigator(`/todo/edit/`);
   };
 
   return (
@@ -13,8 +13,8 @@ const Todo = ({ todo: { id, name, done } }) => {
         {name}
       </h2>
       <h3>{done}</h3>
-      <button onClick={deleteTodo} />
-      <button onClick={editTodo} />
+      <button onClick={deleteTodo}>Delete</button>
+      <button onClick={editTodo}>Add</button>
     </TodoCSS>
   );
 };
