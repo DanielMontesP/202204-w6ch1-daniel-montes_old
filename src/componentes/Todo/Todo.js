@@ -5,7 +5,6 @@ const Todo = ({ id, name, done }) => {
   };
 
   return (
-    // <TodoCSS className="todo">
     <div className="todo-container">
       <div>
         <h2>
@@ -18,8 +17,6 @@ const Todo = ({ id, name, done }) => {
         <button onClick={editTodo}>Add</button>
       </div>
     </div>
-
-    // {/* </TodoCSS> */}
   );
 };
 
