@@ -1,8 +1,6 @@
 const Todo = ({ id, name, done }) => {
   const deleteTodo = () => {};
-  const editTodo = () => {
-    navigator(`/todo/edit/`);
-  };
+  const editTodo = () => {};
 
   return (
     <div className="todo-container">
